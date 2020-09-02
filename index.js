@@ -8,7 +8,7 @@ const Promise = require("bluebird");
 const NAME = "namespace";
 
 // A delay causes random corruptions, the bigger the value of the delay, the worse the corruption will be
-// A delay of 0 causes systematic corruption
+// A delay of 0 causes almost systematic corruption
 // A delay of 100 causes between 98 and 100% corruption with 1000 iterations
 // A random delay results in a lesser rate of corruption than a constant one, with the gap widening when the range of possible values increase
 const RANDOM_DELAY = 6000;
